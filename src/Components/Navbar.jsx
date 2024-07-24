@@ -20,13 +20,13 @@ const RightToLeft = (delay) => ({
 
 function Navbar() {
   return (
-    <div className=" text-white flex justify-between px-2 mt-8">
+    <div className=" text-purple-200 flex justify-between px-2 mt-8">
       <div>
         <motion.h1
           variants={LeftToRight(0.1)}
           initial="from"
           animate="to"
-          className="text-4xl font-semibold hover:text-red-500 cursor-pointer"
+          className="text-4xl font-semibold text-purple-200 hover:text-purple-500 cursor-pointer"
         >
           Anshu
         </motion.h1>
@@ -34,14 +34,14 @@ function Navbar() {
       <div className="flex items-center">
         <ul className="gap-10 text-2xl text-slate-200 hidden  lg:flex ">
           <motion.li variants={RightToLeft(0)} animate="to" initial="from">
-            <a href="" className=" hover:text-red-500  hover:duration-500">
+            <a href="" className=" hover:text-purple-500  hover:duration-500">
               Home
             </a>
           </motion.li>
           <motion.li variants={RightToLeft(0)} animate="to" initial="from">
             <a
               href="#about"
-              className=" hover:text-red-500  hover:duration-500"
+              className=" hover:text-purple-500  hover:duration-500"
             >
               About
             </a>
@@ -49,7 +49,7 @@ function Navbar() {
           <motion.li variants={RightToLeft(0.2)} animate="to" initial="from">
             <a
               href="#skills"
-              className=" hover:text-red-500  hover:duration-400"
+              className=" hover:text-purple-500  hover:duration-400"
             >
               Skills
             </a>
@@ -57,7 +57,7 @@ function Navbar() {
           <motion.li variants={RightToLeft(0.4)} animate="to" initial="from">
             <a
               href="#project"
-              className=" hover:text-red-500  hover:duration-500"
+              className=" hover:text-purple-500  hover:duration-500"
             >
               Projects
             </a>
@@ -65,7 +65,7 @@ function Navbar() {
           <motion.li variants={RightToLeft(0.6)} animate="to" initial="from">
             <a
               href="#contect"
-              className=" hover:text-red-500  hover:duration-500"
+              className=" hover:text-purple-500  hover:duration-500"
             >
               Contect
             </a>

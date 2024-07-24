@@ -5,6 +5,7 @@ import ProfilePic from "../Assets/Profile.png";
 import { motion } from "framer-motion";
 import { FaAnglesDown } from "react-icons/fa6";
 import Navbar from "./Navbar";
+import { Links } from "../Assets/content";
 
 const LeftToRight = (delay, duration) => ({
   from: { x: -100, opacity: 0 },
@@ -44,7 +45,7 @@ function Hero() {
       <Navbar />
       <div
         id="home"
-        className=" flex flex-col xl:flex-row  justify-center gap-10 md:gap-10 lg:gap-20 items-center  text-white h-screen border-b border-slate-500 "
+        className=" flex flex-col xl:flex-row  justify-center gap-10 md:gap-10 lg:gap-20 items-center  text-purple-200 h-screen border-b border-slate-500 "
       >
         <motion.div
           variants={LeftToRight(0.8, 1)}
@@ -73,18 +74,18 @@ function Hero() {
             </a>
             <a
               href="#contect"
-              className="border-2 p-3 text-sm text-black bg-white font-semibold rounded-full hover:bg-black hover:text-white "
+              className="border-2 p-3 text-sm text-black bg-white font-semibold rounded-full hover:bg-black hover:text-purple-200 "
             >
               Contact Info
             </a>
           </div>
           <div className="flex flex-row py-5 justify-center items-center gap-5">
-            <div>
+            <a href={Links.linkedIn}>
               <FaLinkedinIn className="text-3xl hover:text-4xl hover:text-blue-400" />
-            </div>
-            <div className="p-1 rounded-full hover:bg-white">
+            </a>
+            <a href={Links.github} className="p-1 rounded-full hover:bg-white">
               <VscGithub className="text-3xl  hover:text-4xl hover:text-black" />
-            </div>
+            </a>
           </div>
         </motion.div>
         <motion.div variants={RightToLeft(1, 1)} animate="to" initial="from">

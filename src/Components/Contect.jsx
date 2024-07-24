@@ -40,7 +40,7 @@ function Contect() {
   return (
     <div
       id="contect"
-      className="text-white flex flex-col gap-20 border-b border-slate-800  "
+      className="text-purple-200 flex flex-col gap-20 border-b border-slate-800  "
     >
       <motion.div
         variants={TopToDown(0.2, 1)}
@@ -48,10 +48,10 @@ function Contect() {
         whileInView="to"
         className="pt-5"
       >
-        <p className=" hover:text-red-500  hover:duration-400 hover:cursor-pointer text-center text-sm text-slate-400">
+        <p className=" hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-center text-sm text-slate-400">
           Get in Touch
         </p>
-        <h1 className=" hover:text-red-500  hover:duration-400 hover:cursor-pointer text-4xl lg:text-6xl text-center ">
+        <h1 className=" hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-4xl lg:text-6xl text-center ">
           Contact Me
         </h1>
       </motion.div>
@@ -71,7 +71,7 @@ function Contect() {
               initial="from"
               whileInView="to"
               type="text"
-              className=" hover:bg-slate-300 rounded-lg p-2 px-4 text-slate-800 w-72"
+              className=" hover:bg-purple-300 bg-purple-200 text-purple-950 font-semibold  rounded-lg p-2 px-4 w-72"
               name="name"
               placeholder="Your Name"
               required
@@ -81,7 +81,7 @@ function Contect() {
               initial="from"
               whileInView="to"
               type="email"
-              className="hover:bg-slate-300  rounded-lg p-2 px-4 text-slate-800 w-72"
+              className="hover:bg-purple-300 bg-purple-200 text-purple-950 font-semibold   rounded-lg p-2 px-4 w-72"
               name="email"
               placeholder="Your Email"
               required
@@ -91,7 +91,7 @@ function Contect() {
               initial="from"
               whileInView="to"
               type="tel"
-              className="hover:bg-slate-300  rounded-lg p-2 px-4 text-slate-800 w-72"
+              className="hover:bg-purple-300 bg-purple-200 text-purple-950 font-semibold   rounded-lg p-2 px-4 w-72"
               name="Number"
               placeholder="Your Mobile Number"
               required
@@ -101,7 +101,7 @@ function Contect() {
               initial="from"
               whileInView="to"
               name="message"
-              className="hover:bg-slate-300  rounded-lg p-2 px-4 text-slate-800 w-72"
+              className="hover:bg-purple-300 bg-purple-200 text-purple-950 font-semibold   rounded-lg p-2 px-4 w-72"
               placeholder="Your message"
               required
             ></motion.textarea>
@@ -110,7 +110,7 @@ function Contect() {
               initial="from"
               whileInView="to"
               type="submit"
-              className="flex items-center justify-center gap-1 bg-blue-400 w-40 rounded-lg p-2"
+              className="flex items-center justify-center gap-1 bg-purple-400 text-purple-950 w-40 rounded-lg p-2"
             >
               Submit <GrLinkNext />
             </motion.button>

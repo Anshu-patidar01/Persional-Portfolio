@@ -48,21 +48,21 @@ export const PROJECTS = [
     title: "About GPT-3",
     discription: `Welcome to the "What is GPT-3 Introduction Website,"Frontend designe `,
     image: GPt,
-    link: "https://github.com/Anshu-patidar01/Tic-Tac-Toe-Game",
+    link: "https://github.com/Anshu-patidar01/GPT-3-forntend-design",
   },
   {
     title: "Tic Tac Toe Game",
     discription:
       "A two-player Tic Tac Toe game built using React, Redux, and React Router for seamless gameplay and state management.",
     image: TicTacToe,
-    link: "",
+    link: "https://github.com/Anshu-patidar01/Tic-Tac-Toe-Game",
   },
   {
     title: "Prosional Portfolio",
     discription:
       "A responsive portfolio website showcasing my skills and projects, built using React for a dynamic and engaging user experience.",
     image: Portfolio,
-    link: "",
+    link: "https://github.com/Anshu-patidar01/Persional-Portfolio",
   },
 ];
 

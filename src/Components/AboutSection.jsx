@@ -51,7 +51,7 @@ function AboutSection() {
   return (
     <div
       id="about"
-      className=" text-white border-b border-slate-500 lg:h-screen"
+      className=" text-purple-200 border-b border-slate-500 lg:h-screen"
     >
       <motion.div
         variants={TopToButtom(0.2, 1)}
@@ -59,10 +59,10 @@ function AboutSection() {
         whileInView="to"
         className="mt-5"
       >
-        <p className=" hover:text-red-300  hover:duration-400 capitalize lg:pt-5 text-slate-400 text-[10px] lg:text-[20px] text-center">
+        <p className=" hover:text-purple-300  hover:duration-400 capitalize lg:pt-5 text-slate-400 text-[10px] lg:text-[20px] text-center">
           Get to know more
         </p>
-        <h1 className=" hover:text-red-500  hover:duration-400 hover:cursor-pointer capitalize text-2xl lg:text-5xl text-center">
+        <h1 className=" hover:text-purple-500  hover:duration-400 hover:cursor-pointer capitalize text-2xl lg:text-5xl text-center">
           About Me
         </h1>
       </motion.div>
@@ -95,7 +95,7 @@ function AboutSection() {
               variants={RightToLeft(0.6, 1)}
               initial="from"
               whileInView="to"
-              className="border border-white tracking-wide flex flex-col items-center p-2 lg:p-1 gap-1 mt-5 rounded-3xl"
+              className="border border-purple-400 tracking-wide flex flex-col items-center p-2 lg:p-1 gap-1 mt-5 rounded-3xl"
             >
               <IoSchoolSharp className="text-2xl" />
               <h1 className=" capitalize text-slate-50 text-[14px] lg:text-[20px] font-semibold text-center">
@@ -112,7 +112,7 @@ function AboutSection() {
               variants={RightToLeft(0.8, 1)}
               initial="from"
               whileInView="to"
-              className="border border-white tracking-wide flex flex-col items-center p-2 gap-1 mt-5 rounded-3xl"
+              className="border border-purple-400 tracking-wide flex flex-col items-center p-2 gap-1 mt-5 rounded-3xl"
             >
               <IoSchoolSharp className="text-2xl" />
               <h1 className="text-slate-50 text-[14px] lg:text-[20px] font-semibold text-center">

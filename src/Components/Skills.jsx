@@ -42,7 +42,7 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="text-white flex flex-col  items-center border-b lg:h-[100vh] border-slate-500"
+      className="text-purple-200 flex flex-col  items-center border-b lg:h-[100vh] border-slate-500"
     >
       <motion.div
         variants={TopToButtom(0.2, 0.5)}
@@ -50,10 +50,10 @@ function Skills() {
         whileInView="to"
         className="lg:mt-5"
       >
-        <p className="hover:text-red-300  hover:duration-400 hover:cursor-pointer text-sm text-center text-slate-400 pt-5">
+        <p className="hover:text-purple-300  hover:duration-400 hover:cursor-pointer text-sm text-center text-slate-400 pt-5">
           Explore My
         </p>
-        <h1 className="hover:text-red-500  hover:duration-400 hover:cursor-pointer text-4xl text-center lg:text-6xl">
+        <h1 className="hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-4xl text-center lg:text-6xl">
           Skills
         </h1>
       </motion.div>
@@ -62,7 +62,7 @@ function Skills() {
           variants={LeftToRight(0.2, 1)}
           initial="from"
           whileInView="to"
-          className=" border border-white rounded-3xl p-12"
+          className=" border border-purple-400 rounded-3xl p-12"
         >
           <h1 className="text-2xl lg:text-4xl text-slate-300 font-bold tracking-wider">
             {" "}
@@ -112,7 +112,7 @@ function Skills() {
           variants={RightToLeft(0.2, 1)}
           initial="from"
           whileInView="to"
-          className=" border border-white rounded-3xl p-12"
+          className=" border border-purple-400 rounded-3xl p-12"
         >
           <h1 className="text-2xl lg:text-4xl text-slate-300 font-bold tracking-wider">
             Programming Language
@@ -154,7 +154,7 @@ function Skills() {
           </div>
         </motion.div>
 
-        {/* <div className="  border border-white rounded-3xl p-8">
+        {/* <div className="  border border-purple-400 rounded-3xl p-8">
           <h1 className="text-xl">Programming Language</h1>
           <div className=" grid grid-cols-2">
             <div>C</div>
