@@ -3,67 +3,22 @@ import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 import { VscDebugBreakpointData } from "react-icons/vsc";
 
-const LeftToRight = (delay, duration) => ({
-  from: { x: -100, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
-
-const RightToLeft = (delay, duration) => ({
-  from: { x: 100, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.5, delay: delay },
-  },
-});
-const TopToButtom = (delay, duration) => ({
-  from: { y: -100, opacity: 0 },
-  to: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
-
-const popUp = (delay, duration) => ({
-  from: { x: 0, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
-
 function Skills() {
   return (
     <div
       id="skills"
       className="text-purple-200 flex flex-col  items-center border-b lg:h-[100vh] border-slate-500"
     >
-      <motion.div
-        variants={TopToButtom(0.2, 0.5)}
-        initial="from"
-        whileInView="to"
-        className="lg:mt-5"
-      >
+      <div className="lg:mt-5">
         <p className="hover:text-purple-300  hover:duration-400 hover:cursor-pointer text-sm text-center text-slate-400 pt-5">
           Explore My
         </p>
         <h1 className="hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-4xl text-center lg:text-6xl">
           Skills
         </h1>
-      </motion.div>
+      </div>
       <div className="h-full  flex flex-col justify-center mb-5 lg:flex-row lg:h-[26rem] lg:mt-40 lg:gap-36  gap-10">
-        <motion.div
-          variants={LeftToRight(0.2, 1)}
-          initial="from"
-          whileInView="to"
-          className=" border border-purple-400 rounded-3xl p-12"
-        >
+        <div className=" border border-purple-400 rounded-3xl p-12">
           <h1 className="text-2xl lg:text-4xl text-slate-300 font-bold tracking-wider">
             {" "}
             Frontend Development
@@ -107,13 +62,8 @@ function Skills() {
               </div>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          variants={RightToLeft(0.2, 1)}
-          initial="from"
-          whileInView="to"
-          className=" border border-purple-400 rounded-3xl p-12"
-        >
+        </div>
+        <div className=" border border-purple-400 rounded-3xl p-12">
           <h1 className="text-2xl lg:text-4xl text-slate-300 font-bold tracking-wider">
             Programming Language
           </h1>
@@ -152,7 +102,7 @@ function Skills() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* <div className="  border border-purple-400 rounded-3xl p-8">
           <h1 className="text-xl">Programming Language</h1>
@@ -163,15 +113,12 @@ function Skills() {
           </div>
         </div> */}
       </div>
-      <motion.a
-        variants={popUp(0.5, 3)}
-        initial="from"
-        whileInView="to"
+      <a
         href="#project"
         className="absolute  hidden 2xl:block text-2xl font-semibold ms-[85%] mt-[44%]"
       >
         <FaAnglesDown className=" hover:text-blue-400 duration-300 " />
-      </motion.a>
+      </a>
     </div>
   );
 }

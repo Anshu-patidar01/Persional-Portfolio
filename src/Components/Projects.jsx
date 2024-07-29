@@ -2,30 +2,6 @@ import React from "react";
 import { Links, PROJECTS } from "../Assets/content";
 import { motion } from "framer-motion";
 import { FaAnglesDown } from "react-icons/fa6";
-const LeftToRight = (delay, duration) => ({
-  from: { x: -100, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
-const RightToLeft = (delay, duration) => ({
-  from: { x: 100, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
-const popUp = (delay, duration) => ({
-  from: { x: 0, opacity: 0 },
-  to: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: duration, delay: delay },
-  },
-});
 
 function Projects() {
   return (
@@ -33,28 +9,13 @@ function Projects() {
       id="project"
       className="text-purple-200 flex flex-col items-center border-b border-slate-500 pb-10 lg:pb-20"
     >
-      <motion.p
-        variants={LeftToRight(0.2, 1)}
-        initial="from"
-        whileInView="to"
-        className=" hover:text-purple-300  hover:duration-400 hover:cursor-pointer capitalize mt-10 text-sm text-slate-400"
-      >
+      <p className=" hover:text-purple-300  hover:duration-400 hover:cursor-pointer capitalize mt-10 text-sm text-slate-400">
         Browse my recent
-      </motion.p>
-      <motion.h1
-        variants={LeftToRight(0.2, 1)}
-        initial="from"
-        whileInView="to"
-        className=" hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-4xl lg:text-6xl "
-      >
+      </p>
+      <h1 className=" hover:text-purple-500  hover:duration-400 hover:cursor-pointer text-4xl lg:text-6xl ">
         Projects
-      </motion.h1>
-      <motion.div
-        variants={popUp(0.5, 3)}
-        initial="from"
-        whileInView="to"
-        className="flex flex-col lg:flex-row mt-20 gap-10"
-      >
+      </h1>
+      <div className="flex flex-col lg:flex-row mt-20 gap-10">
         {PROJECTS.map((item, index) => (
           <div
             key={index}
@@ -80,16 +41,13 @@ function Projects() {
             </div>
           </div>
         ))}
-      </motion.div>
-      <motion.a
-        variants={popUp(0.5, 3)}
-        initial="from"
-        whileInView="to"
+      </div>
+      <a
         href="#contect"
         className="absolute  hidden 2xl:block text-2xl font-semibold ms-[85%] mt-[44%]"
       >
         <FaAnglesDown className=" hover:text-blue-400 duration-300 hover:text-3xl " />
-      </motion.a>
+      </a>
     </div>
   );
 }
